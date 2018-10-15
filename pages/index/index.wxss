@@ -1,0 +1,40 @@
+.item {
+  padding: 20rpx 30rpx 48rpx;
+  background: #FFFFFF;
+  margin-bottom: 20rpx;
+}
+.item .banner {
+  width: 100%;
+}
+.introduce {
+  color: #333333;
+  font-size: 34rpx;
+}
+.tag .tagItem {
+  background: #FEEEEE;
+  color: #FE5858;
+  margin-right: 20rpx;
+  border-radius:21rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  padding: 0 14rpx;
+  font-size: 24rpx;
+}
+.priceBtn {
+  overflow: hidden;
+  margin-top: 24rpx;
+}
+.price {
+  color: #FE5858;
+  font-size: 36rpx;
+}
+.btn {
+  float: right;
+  width: 200rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  font-size: 28rpx;
+  border-radius: 33rpx;
+  background-color: #FE5858;
+  color: #FFFFFF;
+}

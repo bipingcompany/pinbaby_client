@@ -1,0 +1,16 @@
+<view>
+  <view class="tab">
+    <view name="all" class="tabItem selected">全部</view>
+    <view class="tabItem">待拼团</view>
+    <view class="tabItem">待使用</view>
+    <view class="tabItem">已使用</view>
+  </view>
+  <view class="list">
+    <view wx:for="{{listData}}" wx:key="index" class="listItem">
+      <text class="title">【VIPKID】{{item.goodsTitle}}</text>
+      <text class="time">发起时间：{{item.createTime}}</text>
+      <text class="code">拼团码： {{item.code}}</text>
+      <text class="status">待使用</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,71 @@
+<view>
+  <!-- <web-view src="https://twx.closerhearts.net.cn/">打开币评</web-view> -->
+  <view class="detail">
+    <image class="banner" src="{{detailData.logoUrl}}"></image>
+    <view class="detailInfo">
+      <text class="price">¥{{detailData.price}}元</text>
+      <view class="people">
+        <image class="peopleImg" src="../../img/people.jpg"></image>
+        {{detailData.pinNumber}}人团
+      </view>
+      <button class="shareBtn" open-type="share">分享</button>
+      <text class="title">【{{detailData.merchantName}}】{{detailData.name}}</text>
+      <view class="tag">
+        <text class="tagItem" wx:for="{{detailData.labels}}" wx:for-item="label" wx:key="index">{{label}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="title">
+      <image class="activityImg" src="../../img/activity.jpg"></image>
+      活动特色
+    </view>
+    <view class="con">
+      问候，新兵！经过广泛的准备，我终于实现了“无限飞越”的梦想！我们参加了第123次航天飞机飞行和第26次航行到国际空间站。升空是一次爆炸！在发射前几秒钟，我们经历了主发动机点火时发生的摇晃和隆隆声。一旦双火箭助推器爆炸，我们在探索轨道飞行器中向太空飙升时发生极端活动。在两分钟内我们达到了超过3,400英里每小时的速度，为了实现轨道运行我们会更快！ 
+      
+      这个令人难以置信的太空船超过18层，重量超过400万磅，载有8吨以上的货物和超过80万加仑的燃料。发现号航天飞机以两艘着名的帆船命名，其中一艘由亨利·哈德森航行，另一艘由詹姆斯·库克航行。但这个发现注定是星星，而不是水！ 
+      
+      坐在飞行员座位的是宇航员和名誉太空游侠，海军指挥官Ken Ham。执行STS-124任务的是海军司令马克凯利。与其他五名宇航员一起，我们将提供日本实验模块的压力模块和机械臂，称为Kibo，意为“希望”。我们的任务是完成Kibo实验室的三个航班中的第二个。 
+      
+      新兵，我们使命的成功取决于团队精神，精确度和准备。我们不能使用超级驱动器返回Star Command以获取我们忘记的任何内容。我们必须为各种可能性做好充分准备。 
+      
+      尝试第一个游戏，加载班车，测试你的技能，并执行有效载荷培训任务！祝你好运，学员们！ 
+      
+      加载穿梭游戏 
+      
+      航天飞机的有效载荷对每项任务都是独一无二的。航天飞机有效载荷舱可以包括各种形状，尺寸和重量的有效载荷。进行维修和完成指定任务所需的用品，科学实验，国际空间站组件，材料和工具可能是航天飞机有效载荷的一部分。有效载荷的重量会影响航天飞机的总重量，必须仔细考虑和规划。 
+      
+      1.想象一下，确定航天飞机的任务是你的工作。 
+      
+      2.你的任务目的是什么？ 
+      
+      3.确定您需要包含在有效载荷中的基本项目，以完成任务并为每个项目分配合理的重量。您可能需要进行一些研究以确定有效负载项的重量。 
+      
+      4.列出您的有效负载项目的个人权重。 
+      
+      5.你的部分任务有效载荷不能超过225磅。 
+      
+      6.您的总有效负载重量是多少？ 
+      
+      7.您是否超出了有效载荷限制？ 
+      
+      8.如果你确实超过了有效载荷限制，你将如何决定留下什么？为什么？
+    </view>
+  </view>
+  <view class="footer">
+    <view bindtap="goIndex" class="goIndex">
+      <image class="homeImg" src="../../img/home.jpg"></image>
+      <view>首页</view>
+    </view>
+    <view class="singleBuy">
+      <form bindsubmit="formId" report-submit='true'>
+        <button data-type="1" bindtap="goPay" form-type="submit">单买价 ¥200元</button>
+      </form>
+    </view>
+    <view class="groupBuy">
+      <form bindsubmit="formId" report-submit='true'>
+        <button data-type="2" bindtap="goPay" form-type="submit">拼团价 ¥{{detailData.price}}元</button>  
+      </form>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view>
+  <view class="payList">
+    <view class="listItem">
+      <text class="title">【{{detailData.merchantName}}】{{detailData.name}}</text>
+      <text class="content">仅需60元，体验10堂、300小时VIPKID精品公开课</text>
+    </view>
+  </view>
+  <view class="payFooter">
+    <view class="price">
+      {{type == 1 ? '单买价' : '拼团价'}}
+      <text class="num">¥{{detailData.price}}元</text>
+    </view>
+    <button bindtap="goResult" class="payBtn">微信支付</button>
+  </view>
+</view>

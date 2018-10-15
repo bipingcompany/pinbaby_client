@@ -1,0 +1,39 @@
+<view>
+  <view class="detail">
+    <block wx:if="{{resultData.groupStatus == 'FINISH' && resultData.alreadStatus}}">
+      <text class="title red">拼团成功！</text>
+      <text class="text">拼团详情可在我的订单中查看</text>
+    </block>
+    <block wx:elif="{{resultData.groupStatus == 'DOING'}}">
+      <view class="title">还差
+        <text class="red">{{resultData.needCount - resultData.userInfo.length}}</text>
+      人,拼团成功</view>
+      <text class="text">分享到3个群，成团率高达99%</text>
+    </block>
+    <block wx:elif="{{resultData.groupStatus == 'FINISH' && !resultData.alreadStatus}}">
+      <text class="title">该团已满！</text>
+      <text class="text">该团已满，你可以重新开团</text>
+    </block>
+    <view class="avatorList">
+      <view wx:for="{{resultData.needCount}}" class="listItem" wx:key="index">
+        <image wx:if="{{resultData.userInfo.length-1 >= index}}" class="avaUrl" src="{{resultData.userInfo[index].avatar}}"></image>
+        <image wx:else class="defaultImg" src="../../img/wen.png"></image>
+      </view>
+    </view>
+    <block wx:if="{{resultData.groupStatus == 'FINISH' && resultData.alreadStatus}}">
+      <button class="shareBtn">查看订单</button>
+    </block>
+    <block wx:elif="{{resultData.groupStatus == 'DOING'}}">
+      <button open-type="share" class="shareBtn">邀请好友拼单</button>
+    </block>
+    <block wx:elif="{{resultData.groupStatus == 'FINISH' && !resultData.alreadStatus}}">
+      <button bindtap="goDetail" class="shareBtn">我来开团</button>
+    </block>
+    <view class="activityCon">
+      活动：【VIPKID】{{resultData.goodName}}
+    </view>
+  </view>
+  <form bindsubmit="formId" report-submit='true'>
+    <button bindtap="goIndex" class="moreBtn" form-type="submit">查看更多活动</button>  
+  </form>
+</view>

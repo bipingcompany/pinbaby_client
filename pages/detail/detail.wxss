@@ -1,0 +1,122 @@
+.detail .banner {
+  width: 100%;
+  vertical-align: bottom;
+}
+.detail .detailInfo {
+  position: relative;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+.detail .detailInfo .price {
+  color: #FE5858;
+  font-size: 40rpx;
+}
+.detail .detailInfo .people {
+  display: inline-block;
+  height: 32rpx;
+  line-height: 32rpx;
+  border: 1px solid #FE5858;
+  color: #FE5858;
+  font-size: 24rpx;
+  padding: 0 14rpx;
+  border-radius: 21rpx;
+  margin-left: 20rpx;
+}
+.peopleImg {
+  width: 25rpx;
+  height: 21rpx;
+}
+.detail .detailInfo .shareBtn {
+  width: 76rpx;
+  height: 36rpx;
+  float: right;
+  background: url("data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAkCAYAAAAjMNwcAAAAAXNSR0IArs4c6QAAAs5JREFUaAXtmr9vEzEUx3OXZImKmK9kayc6JkqIwpAZIsrA1DlihAWJrQMbEn9CxcAOalEzIaRIDFF+rUgM3ZpjRoqy5Bffb3OvStrEdw4dyNmWLOvs55e8zz3b72w7CUUqFovZyWRyCJGnyHuz2WwX5Y6iy3/V1O12I/2ffD4fKuc4ziWEXjqrJHO5nIf6d8jPkc+Rz5LJ5M9MJuM3Go0Bnrci4QXPovxRwFjJQfqCx2OIvMbzo5RUSgnaz/A7J3hm3u/1en+kzcSSsGD3ZwA7mk6nL5aAofEVGt/Am5602+1o/hxjigLLdd2jTqfzHc+Ja2D0LMJKp9OlZrPZjwOHsKGmsvEmLJG9AoZGj8OQnhUXWGLgJuU6WNTlBgo5wZ/YYZhIqGCRVYqhw3g85mq4zwqTUxgssnGDOOvcrobz1VAm+HWOwyHJoPRsnYAJ9VE8SzgQ2B6DUqkwrdSBRTYprI67jOBNA0V7o8ACn6WvBYYVO9v0uXOXLxbzVRX6roLSyHpBeYlg5I6GCNLDFpPEYYaY/+9mWmCaDC0wC0yTgKa49TBNYNfbO5r9jBFf3CJiRGE9TPPVW2AWmCYBTXHrYRsAG1Qqla05a9S0787Ey+XyPSgbuFgF/OFwyANamxQERqORR1YckhfYdX2okLVNcwIHZEVgdWReB7BJQQBOxWPIuovdVm5PVxGU3VfIG90UsKmSldtqtS5B4xT5rdFU1MaTzSlZSVhxjIpaoVAIv8aiVhy71oBJDYaR0fwgF0dsv7EC1HDZ4kupVHoQO6s3NIgsyIRsyIhqkqLL9/1fnudNIPAxm83+6Pf7Rh6MCA96Fib6b9ie/gBYn6T+1r2oG9ed3pt2wBtM8JyzavQsXMr7KrBY3gLGSnSKxYU62hKW+JUTBO4HQejAkyQugscyDBd1rAQmAtt+ZVPsCCkHjOAhc4FcZ+gQRA4ru/0FEYUZPrVmKXsAAAAASUVORK5CYII=") no-repeat center;
+  background-size: cover;
+  font-size: 24rpx;
+  color: #666666;
+  text-align: center;
+  line-height: 36rpx;
+  margin: 0;
+  padding: 0;
+}
+.detail .detailInfo .title {
+  display: block;
+  color: #333333;
+  font-size: 34rpx;
+}
+.detail .detailInfo .tag .tagItem{
+  height: 42rpx;
+  background: #FEEEEE;
+  color: #FE5858;
+  border-radius: 21rpx;
+  font-size: 24rpx;
+  padding: 5rpx 14rpx;
+}
+.activityImg {
+  width: 32rpx;
+  height: 35rpx;
+}
+.content {
+  background: #fff;
+  padding: 40rpx 30rpx 182rpx;
+}
+.content .title {
+  color: #333333;
+  font-size: 32rpx;
+}
+.content .con{
+  color: #666666;
+  font-size: 28rpx;
+  line-height: 1.5;
+  white-space: pre-line;
+  text-align: justify;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 142rpx;
+  border-top: 1px solid #ECECEC;
+  background: #fff;
+  width: 100%;
+  justify-items: center;
+}
+.footer .goIndex {
+  flex: 0 0 108rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #999999;
+}
+.footer .goIndex .homeImg {
+  width: 36rpx;
+  height: 45rpx;
+  display: block;
+  margin: 0 auto;
+}
+.footer .singleBuy {
+  flex: 0 0 248rpx;
+}
+.footer .singleBuy button {
+  width: 248rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #FFAB2A;
+  color:#FFFFFF;
+  font-size: 28rpx;
+  border-radius: 44rpx;
+}
+.footer .groupBuy {
+  flex: 1;
+}
+.footer .groupBuy button {
+  width: 326rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #FE5858;
+  color:#FFFFFF;
+  font-size: 28rpx;
+  border-radius: 44rpx;
+}

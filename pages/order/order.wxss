@@ -1,0 +1,61 @@
+.tab {
+  width: 100%;
+  display: flex;
+  height: 90rpx;
+  background: #fff;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+.tab .tabItem {
+  position: relative;
+  flex: 1;
+  color: #666666;
+  font-size: 30rpx;
+}
+.tab .selected {
+  color: #FE5858;
+}
+.tab .selected::after {
+  content: '';
+  width: 100rpx;
+  height: 4rpx;
+  background: #FE5858;
+  position: absolute;
+  bottom: -20rpx;
+  left: 50%;
+  margin-left: -50rpx;
+}
+.list {
+  margin-top: 120rpx;
+}
+.listItem {
+  position: relative;
+  margin: 0 30rpx 30rpx;
+  background: #fff;
+  padding: 30rpx;
+}
+.listItem .title {
+  display: block;
+  color: #333333;
+  font-size: 34rpx;
+}
+.listItem .time {
+  display: block;
+  color: #666666;
+  font-size: 26rpx;
+}
+.listItem .code {
+  display: block;
+  color: #666666;
+  font-size: 26rpx;
+}
+.listItem .status {
+  position: absolute;
+  font-size: 28rpx;
+  color: #FE5858;
+  top: 35rpx;
+  right: 30rpx;
+}

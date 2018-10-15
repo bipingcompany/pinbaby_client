@@ -1,0 +1,8 @@
+<view class="loginBg">
+    <view class="loginCon" wx:if="{{!hasUserInfo && canIUse}}">
+        <image class="loginLogo" src="../../img/logo.jpg"></image>
+        <text class="loginTitle">拼团报名助手</text>
+        <button class="loginBtn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权登录 </button>
+        <!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">手机号授权</button> -->
+    </view>
+</view>

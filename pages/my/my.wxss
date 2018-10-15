@@ -1,0 +1,58 @@
+.card {
+  position: relative;
+  display: flex;
+  margin: 20rpx 30rpx 60rpx;
+  background: linear-gradient(to bottom, #FF7A7A, #FE5858);
+  height: 232rpx;
+  border-radius: 28rpx;
+  line-height: 232rpx;
+}
+.avatar {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  position: relative;
+  top: 26rpx;
+  margin: 0 40rpx;
+}
+.name {
+  color: #FFFFFF;
+  font-size: 32rpx;
+}
+.list {
+  background: #fff;
+  border-radius: 28rpx;
+  margin: 0 30rpx;
+}
+.listItem {
+  position: relative;
+  border-bottom: 1px solid #ECECEC;
+  color: #666666;
+  font-size: 32rpx;
+  margin: 0 30rpx;
+  height: 114rpx;
+  line-height: 114rpx;
+}
+.listItem:last-child {
+  border-bottom: none;
+}
+.listItem::after {
+  display: inline-block;
+  content: "";
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 4rpx 4rpx 0 0;
+  border-color: #999999;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  right: 6rpx;
+  margin-top: -9rpx;
+}
+
+.listItem .icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}

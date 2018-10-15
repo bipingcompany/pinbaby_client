@@ -1,0 +1,59 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.4",
+	"appid": "wx4072e2e02ef6e9a7",
+	"projectname": "%E6%8B%BC%E5%9B%A2%E6%8A%A5%E5%90%8D%E5%8A%A9%E6%89%8B",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "q",
+					"pathName": "pages/login/login",
+					"query": "fromPath=detail/detail&militaryid=4"
+				},
+				{
+					"id": 1,
+					"name": "拼团",
+					"pathName": "pages/result/result",
+					"query": "nemoreId=2201810121124311&commId=1"
+				},
+				{
+					"id": 2,
+					"name": "拼团中间页",
+					"pathName": "pages/joinGroup/joinGroup",
+					"query": "nemoreId=2201810121124311&commId=1"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,28 @@
+<view class="joinGroup">
+  <view class="card">
+    <view class="headCon">
+      <image class="leftImg" src="{{detailData.logoUrl}}"></image>
+      <text class="title">【Vipkid】跟随外教游故宫，一起探索中华五千年文化</text>
+    </view>
+    <view class="tag">
+      <text class="tagItem" wx:for="{{detailData.labels}}" wx:for-item="label" wx:key="index">{{label}}</text>
+    </view>
+    <view class="priceBtn">
+      <text class="price">¥{{detailData.price}}元</text>
+      <form bindsubmit="formId" report-submit='true'>
+        <button class="btn" form-type="submit">查看详情</button>
+      </form>
+    </view>
+  </view>
+  <view class="detail">
+    <text class="title red">拼团成功！</text>
+    <text class="text">拼团详情可在我的订单中查看</text>
+    <view class="avatorList">
+      <view wx:for="{{resultData.needCount}}" class="listItem" wx:key="index">
+        <image wx:if="{{resultData.userInfo.length-1 >= index}}" class="avaUrl" src="{{resultData.userInfo[index].avatar}}"></image>
+        <image wx:else class="defaultImg" src="../../img/wen.png"></image>
+      </view>
+    </view>
+    <button bindtap="invokeGroup" class="shareBtn">我要参团</button>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<view>
+  <view class="card">
+    <image class="avatar" src="{{user.avatar}}"></image>
+    <text class="name">{{user.nickname}}</text>  
+  </view>
+  <view class="list">
+    <view bindtap="toOrder" class="listItem">
+      <image class="icon" src="../../img/orderIcon.jpg"></image>
+      <text>我的订单</text>
+    </view>
+    <view class="listItem">
+      <image class="icon" src="../../img/guideIcon.jpg"></image>
+      <text>使用指南</text>
+    </view>
+  </view>
+</view>

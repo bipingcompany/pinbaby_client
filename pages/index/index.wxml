@@ -1,0 +1,15 @@
+<view class="index">
+  <view class="item" wx:for="{{listData}}" wx:key="id">
+    <image class="banner" src="{{item.logoUrl}}"></image>
+    <text class="introduce">【{{item.merchantName}}】{{item.name}}</text>
+    <view class="tag">
+      <text class="tagItem" wx:for="{{item.labels}}" wx:for-item="label" wx:key="index">{{label}}</text>
+    </view>
+    <view class="priceBtn">
+      <text class="price">¥{{item.price}}元</text>
+      <form bindsubmit="formId" report-submit='true'>
+        <button class="btn" data-id="{{item.id}}" form-type="submit">我要开团</button>
+      </form>
+    </view>
+  </view>
+</view>

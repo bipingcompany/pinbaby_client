@@ -1,0 +1,32 @@
+.loginBg {
+  height: 100%;
+  background: #ffffff;
+  text-align: center
+}
+.loginTitle {
+  display: block;
+  color: #343434;
+  font-size: 44rpx;
+  margin: 15rpx 0 59rpx;
+}
+.loginCon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+.loginCon .loginLogo {
+  width: 180rpx;
+  height: 180rpx;
+  
+}
+.loginCon .loginBtn {
+  width: 386rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #FE5858;
+  border-radius: 41rpx;
+  color: #fff;
+  font-size: 36rpx;
+  border: none;
+}
