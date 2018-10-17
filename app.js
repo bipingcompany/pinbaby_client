@@ -1,7 +1,9 @@
 import URLS from './api/urls'
+import { addParamsObj } from './utils/util'
 App({
   onLaunch: function(path) {
-    this.globalData.fromPath = '/' + path.path
+    let queryData= addParamsObj(path.query)
+    this.globalData.fromPath = '/' + path.path + queryData
     // 登录
     let that = this;
     wx.login({

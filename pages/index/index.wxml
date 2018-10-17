@@ -6,7 +6,7 @@
       <text class="tagItem" wx:for="{{item.labels}}" wx:for-item="label" wx:key="index">{{label}}</text>
     </view>
     <view class="priceBtn">
-      <text class="price">¥{{item.price}}元</text>
+      <text class="price">拼团价：¥{{item.pricePin}}元</text>
       <form bindsubmit="formId" report-submit='true'>
         <button class="btn" data-id="{{item.id}}" form-type="submit">我要开团</button>
       </form>

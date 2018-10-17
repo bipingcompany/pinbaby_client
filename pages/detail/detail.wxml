@@ -21,7 +21,8 @@
       活动特色
     </view>
     <view class="con">
-      问候，新兵！经过广泛的准备，我终于实现了“无限飞越”的梦想！我们参加了第123次航天飞机飞行和第26次航行到国际空间站。升空是一次爆炸！在发射前几秒钟，我们经历了主发动机点火时发生的摇晃和隆隆声。一旦双火箭助推器爆炸，我们在探索轨道飞行器中向太空飙升时发生极端活动。在两分钟内我们达到了超过3,400英里每小时的速度，为了实现轨道运行我们会更快！ 
+      {{detailData.detailContent}}
+      <!-- 问候，新兵！经过广泛的准备，我终于实现了“无限飞越”的梦想！我们参加了第123次航天飞机飞行和第26次航行到国际空间站。升空是一次爆炸！在发射前几秒钟，我们经历了主发动机点火时发生的摇晃和隆隆声。一旦双火箭助推器爆炸，我们在探索轨道飞行器中向太空飙升时发生极端活动。在两分钟内我们达到了超过3,400英里每小时的速度，为了实现轨道运行我们会更快！ 
       
       这个令人难以置信的太空船超过18层，重量超过400万磅，载有8吨以上的货物和超过80万加仑的燃料。发现号航天飞机以两艘着名的帆船命名，其中一艘由亨利·哈德森航行，另一艘由詹姆斯·库克航行。但这个发现注定是星星，而不是水！ 
       
@@ -49,7 +50,7 @@
       
       7.您是否超出了有效载荷限制？ 
       
-      8.如果你确实超过了有效载荷限制，你将如何决定留下什么？为什么？
+      8.如果你确实超过了有效载荷限制，你将如何决定留下什么？为什么？ -->
     </view>
   </view>
   <view class="footer">
@@ -59,12 +60,12 @@
     </view>
     <view class="singleBuy">
       <form bindsubmit="formId" report-submit='true'>
-        <button data-type="1" bindtap="goPay" form-type="submit">单买价 ¥200元</button>
+        <button data-type="1" bindtap="goPay" form-type="submit">单买价 ¥{{detailData.price}}元</button>
       </form>
     </view>
     <view class="groupBuy">
       <form bindsubmit="formId" report-submit='true'>
-        <button data-type="2" bindtap="goPay" form-type="submit">拼团价 ¥{{detailData.price}}元</button>  
+        <button data-type="2" bindtap="goPay" form-type="submit">拼团价 ¥{{detailData.pricePin}}元</button>  
       </form>
     </view>
   </view>

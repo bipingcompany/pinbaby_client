@@ -4,8 +4,7 @@ const app = getApp()
 Page({
   data: {
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    fromPath: null
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   // 开发版第一次授权
   getUserInfo: async function(e) {

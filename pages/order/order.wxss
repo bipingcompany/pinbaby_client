@@ -41,6 +41,7 @@
   display: block;
   color: #333333;
   font-size: 34rpx;
+  margin-right: 100rpx;
 }
 .listItem .time {
   display: block;

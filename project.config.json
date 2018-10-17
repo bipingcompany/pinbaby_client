@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": 0,
@@ -45,13 +45,19 @@
 					"id": 1,
 					"name": "拼团",
 					"pathName": "pages/result/result",
-					"query": "nemoreId=2201810121124311&commId=1"
+					"query": "nemoreId=2201810131539071&commId=1"
 				},
 				{
 					"id": 2,
 					"name": "拼团中间页",
 					"pathName": "pages/joinGroup/joinGroup",
 					"query": "nemoreId=2201810121124311&commId=1"
+				},
+				{
+					"id": -1,
+					"name": "拼团",
+					"pathName": "pages/order/order",
+					"query": ""
 				}
 			]
 		}

@@ -65,5 +65,10 @@ Page({
     wx.switchTab({
       url: '/pages/index/index'
     })
+  },
+  goOrder: function() {
+    wx.navigateTo({
+      url: '/pages/order/order'
+    })
   }
 })

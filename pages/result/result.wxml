@@ -21,7 +21,7 @@
       </view>
     </view>
     <block wx:if="{{resultData.groupStatus == 'FINISH' && resultData.alreadStatus}}">
-      <button class="shareBtn">查看订单</button>
+      <button bindtap="goOrder" class="shareBtn">查看订单</button>
     </block>
     <block wx:elif="{{resultData.groupStatus == 'DOING'}}">
       <button open-type="share" class="shareBtn">邀请好友拼单</button>

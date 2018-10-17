@@ -1,21 +1,15 @@
 import regeneratorRuntime from '../../lib/regenerator/runtime-module'
 import { spellorder } from '../../api/apis'
+import { convertDate } from '../../utils/util'
 
 Page({
   data:{
-    listData: null
+    listData: null,
+    orderType: 'ALL'
   },
-  onLoad: async function(options){
+  onLoad: function(options){
     // 生命周期函数--监听页面加载
-    const data = await spellorder({
-      data: {
-        pageNumber: 1,
-        pageSize: 10
-      }
-    })
-    this.setData({
-      listData: data.data
-    })
+    this.getListdata()
   },
   onReady:function(){
     // 生命周期函数--监听页面初次渲染完成
@@ -42,5 +36,28 @@ Page({
       desc: 'desc', // 分享描述
       path: 'path' // 分享路径
     }
+  },
+  tabClick: function(e) {
+    const { name } = e.currentTarget.dataset
+    this.setData({
+      orderType : name
+    })
+    this.getListdata()
+  },
+  getListdata: async function() {
+    const data = await spellorder({
+      data: {
+        orderType: this.data.orderType,
+        pageNumber: 1,
+        pageSize: 1000
+      }
+    })
+    data.data.map(function(item){
+      item.createTime = convertDate(item.createTime, 'YYYY.MM.DD')
+      return item
+    })
+    this.setData({
+      listData: data.data
+    })
   }
 })

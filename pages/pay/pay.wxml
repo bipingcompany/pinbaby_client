@@ -2,7 +2,7 @@
   <view class="payList">
     <view class="listItem">
       <text class="title">【{{detailData.merchantName}}】{{detailData.name}}</text>
-      <text class="content">仅需60元，体验10堂、300小时VIPKID精品公开课</text>
+      <text class="content">{{detailData.detailContent}}</text>
     </view>
   </view>
   <view class="payFooter">
